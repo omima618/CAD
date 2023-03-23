@@ -1,0 +1,22 @@
+.testimonials {
+    position: relative;
+}
+
+.section-sesc {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1B004F;
+}
+
+.reviews-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.testimonials .end-line,
+.end-line defs,
+.end-line path {
+    width: 100%;
+    max-width: 100%;
+}

@@ -1,0 +1,14 @@
+.services-wrapper {
+    gap: 30px;
+}
+
+.services-pagination span{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background-color: #1C0050;
+    border-radius: 4px;
+}
+.services-pagination span.active{
+    background-color: #C637A0;
+}

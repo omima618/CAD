@@ -1,0 +1,69 @@
+.hero {
+    background: url('../../../assets/decor/hero-section-bg.png') no-repeat;
+    background-position: center top;
+    background-size: cover;
+    width: 100%;
+    color: #fff;
+}
+.hero .intro-wrapper{
+    position: relative;
+    z-index: 2;
+}
+.hero .intro-wrapper h1 {
+    font-weight: 800;
+    font-size: 64px;
+}
+
+.hero .intro-wrapper .intro-text {
+    width: 465px;
+    max-width: 100%;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.hero .img-wrapper {
+    position: absolute;
+    z-index:1;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.hero .img-wrapper img {
+    display: block;
+    max-width: 100%;
+    animation: animateImg 2.5s linear infinite alternate;
+
+}
+
+@keyframes animateImg{
+    0% {
+        scale: 0.9;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+@media (width <= 991px) {
+    .hero .intro-wrapper h1 {
+        font-size: 50px;
+    }
+    .hero .img-wrapper {
+        display: none;
+    }
+}
+
+@media (width <= 767px) {
+    .hero .intro-wrapper h1 {
+        font-size: 45px;
+    }
+}
+
+@media (width <= 375px) {
+    .hero .intro-wrapper h1 {
+        font-size: 40px;
+    }
+}

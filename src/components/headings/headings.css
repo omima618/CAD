@@ -1,0 +1,37 @@
+.main-section-title{
+    overflow: hidden !important;
+}
+.main-section-title h2{
+    font-size: 40px;
+    color: #1C0050;
+    font-weight: 700;
+    position: relative;
+}
+
+.main-section-title h2::after{
+    content: '';
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #C637A0;
+    border-radius: 4px;
+    transform: translateX(-50%);
+}
+
+.main-section-title .line{
+    flex-shrink: 2;
+    max-width: 100%;
+}
+
+@media (width <= 991px) {
+    .main-section-title h2{
+        font-size: 35px;
+    }
+}
+@media (width <= 767px) {
+    .main-section-title h2{
+        font-size: 30px;
+    }
+}
